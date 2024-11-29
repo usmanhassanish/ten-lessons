@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*
+		{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;	
+		}
+		.top
+		{
+			color: white;
+			background-color: black;
+			border-bottom:2px dashed white;
+			text-align: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 40px;
+		}
+		.links
+		{
+			width: 80%;
+			margin-left: 10%;
+			color: white;
+			background-color: black;
+			margin-top: 10px;
+			text-align: center;
+			border-radius: 5px;
+			display: none;
+		}
+		h3
+		{
+			border-bottom: 1px solid;
+		}
+		a
+		{
+			color: white;
+			text-decoration: none;
+		}
+		#colors
+		{
+			width: 40%;
+			margin-left: 30%;
+			overflow: auto;
+			margin-top: 10px;
+		}
+		.color
+		{
+			background-color: white;
+			border: 2px solid black;
+			border-radius: 5px;
+			width: 19%;
+			float: left;
+			height: 20px;
+			margin-left: 0.5%;
+			margin-right: 0.5%;
+			margin-bottom: 0.5%;
+		}
+		body
+		{
+			background-color: black;
+		}
+		.quote
+		{
+			width: 60%;
+			margin-left: 20%;
+			display: flex;
+			align-items: center;
+			text-align: center;
+			color: white;
+			margin-top: 20px;
+			border: 3px double white;
+			border-radius: 5px;
+			font-family: georgia;
+		}
+		#quote
+		{
+			text-align: center;
+		}
+		h2
+		{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="top">
+		<img onclick="pop()" src="menu.png">
+	</div>
+
+	<div id="pop" class="links">
+		<a href="index.html"><h3>10 Lessons from 10 books</h3></a>
+		<a href="home.html"><h3>10 Tought Provoking Quotes</h3></a>
+	</div>
+	<div style="text-align: center;color: white;">
+		<h3 style="font-family: georgia;">TEN THOUGHT PROVOKING QUOTES</h3>
+	</div>
+	<div id="colors">
+		<div class="color" onclick="funcOne()" style="background-color: #1a5276;">
+			
+		</div>
+		<div class="color" onclick="funcTwo()" style="background-color: #21618c;">
+			
+		</div>
+		<div class="color" onclick="funcThree()" style="background-color: #117864;">
+			
+		</div>
+		<div class="color" onclick="funcFour()" style="background-color: #0e6655;">
+			
+		</div>
+		<div class="color" onclick="funcFive()" style="background-color: #196f3d;">
+			
+		</div>
+		<div class="color" onclick="funcSix()" style="background-color: #154360;">
+			
+		</div>
+		<div class="color" onclick="funcSeven()" style="background-color: #1b4f72;">
+			
+		</div>
+		<div class="color" onclick="funcEight()" style="background-color: #0e6251;">
+			
+		</div>
+		<div class="color" onclick="funcNine()" style="background-color: #0b5345;">
+			
+		</div>
+		<div class="color" onclick="funcTen()" style="background-color: #145a32;">
+			
+		</div>
+	</div>
+	<div class="quote">
+		<h2 id=quote style="text-align:center;">Click on the colors to see view the quotes</h2>
+	</div>
+	<div style="text-align: center; font-family: garamond;">
+		<h1 style="margin-top: 70px;color: white;">QUOTE OF THE DAY</h1>
+		<hr style="width:80%; border: 3px solid white;border-radius: 5px;margin-left: 10%;">
+		<h2 style="color:white;" id="echo">
+			
+		</h2>
+	</div>
+	<script type="text/javascript">
+		const today = new Date();
+		if (today.getDay() === 1) 
+		{
+		    if (today.getDate() * 2 < 10)
+		    {
+		    	document.getElementById('echo').innerHTML = "Nothing is more fairly distributed than common sense: no one thinks he needs more of it than he already has. ― René Descartes";
+		    }
+		    else if (today.getDate() * 2 < 20)
+		    {
+		    	document.getElementById('echo').innerHTML = "There is nothing more ancient than the truth. - René Descartes";
+		    }
+		    else
+		    {
+		    	document.getElementById('echo').innerHTML = "The reading of all good books is like conversation with the finest men of past centuries. - René Descartes";
+		    }
+		}
+		else if (today.getDay() === 2) 
+		{
+		    if (today.getDate() * 2 < 10)
+		    {
+		    	document.getElementById('echo').innerHTML = "Never allow someone to be your priority while allowing yourself to be their option. - Mark Twain";
+		    }
+		    else if (today.getDate() * 2 < 20)
+		    {
+		    	document.getElementById('echo').innerHTML = "Don’t go around saying the world owes you a living. The world owes you nothing. It was here first. - Mark Twain";
+		    }
+		    else
+		    {
+		    	document.getElementById('echo').innerHTML = "I have never let my schooling interfere with my education. - Mark Twain";
+		    }
+		}
+		else if (today.getDay() === 3) 
+			{
+		    if (today.getDate() * 2 < 10)
+		    {
+		    	document.getElementById('echo').innerHTML = "Whenever you find yourself on the side of the majority, it is time to reform (or pause and reflect). - Mark Twain";
+		    }
+		    else if (today.getDate() * 2 < 20)
+		    {
+		    	document.getElementById('echo').innerHTML = "The choice for mankind lies between freedom and happiness and for the great bulk of mankind, happiness is better. - George Orwell";
+		    }
+		    else
+		    {
+		    	document.getElementById('echo').innerHTML = "Reality exists in the human mind, and nowhere else. - George Orwell";
+		    }
+		}
+		else if (today.getDay() === 4) 
+			{
+		    if (today.getDate() * 2 < 10)
+		    {
+		    	document.getElementById('echo').innerHTML = "Power is in tearing human minds to pieces and putting them together again in new shapes of your own choosing. - George Orwell";
+		    }
+		    else if (today.getDate() * 2 < 20)
+		    {
+		    	document.getElementById('echo').innerHTML = "If you want to keep a secret, you must also hide it from yourself. - George Orwell";
+		    }
+		    else
+		    {
+		    	document.getElementById('echo').innerHTML = "The world breaks everyone, and afterward, many are strong at the broken places. - Ernest Hemingway";
+		    }
+		}
+		else if (today.getDay() === 5) 
+			{
+		    if (today.getDate() * 2 < 10)
+		    {
+		    	document.getElementById('echo').innerHTML = "There is nothing noble in being superior to your fellow man; true nobility is being superior to your former self. - Ernest Hemingway";
+		    }
+		    else if (today.getDate() * 2 < 20)
+		    {
+		    	document.getElementById('echo').innerHTML = "The most painful thing is losing yourself in the process of loving someone too much, and forgetting that you are special too. - Ernest Hemingway";
+		    }
+		    else
+		    {
+		    	document.getElementById('echo').innerHTML = "There is no friend as loyal as a book. - Ernest Hemingway";
+		    }
+		}
+		else if (today.getDay() === 6) 
+			{
+		    if (today.getDate() * 2 < 10)
+		    {
+		    	document.getElementById('echo').innerHTML = "The mystery of human existence lies not in just staying alive, but in finding something to live for. ― Fyodor Dostoyevsky";
+		    }
+		    else if (today.getDate() * 2 < 20)
+		    {
+		    	document.getElementById('echo').innerHTML = "It takes something more than intelligence to act intelligently. ― Fyodor Dostoyevsky";
+		    }
+		    else
+		    {
+		    	document.getElementById('echo').innerHTML = "But how could you live and have no story to tell? ― Fyodor Dostoevsky";
+		    }
+		}
+		else
+		{
+		    if (today.getDate() * 2 < 10)
+		    {
+		    	document.getElementById('echo').innerHTML = "Envy is a really stupid sin because it’s the only one you could never possibly have any fun at. There’s a lot of pain and no fun. Why would you want to get on that trolley? ― Charles T. Munger";
+		    }
+		    else if (today.getDate() * 2 < 20)
+		    {
+		    	document.getElementById('echo').innerHTML = "Although the world is full of suffering, it is full also of the overcoming of it. - Helen Keller";
+		    }
+		    else
+		    {
+		    	document.getElementById('echo').innerHTML = "Every action you take is a vote for the type of person you wish to become. ― James Clear";
+		    }
+		}
+
+		
+	</script>
+	<script type="text/javascript">
+
+		const element = document.getElementById('pop');
+		function pop()
+		{
+			if (element.style.display === "none") {
+                element.style.display = "block";
+                
+            } else {
+                element.style.display = "none";
+            }
+		};
+		function funcOne()
+		{
+			document.getElementById('quote').innerHTML = "More gold had been mined from the mind of men than the earth it self - Napoleon Hill";
+
+		};
+		function funcTwo()
+		{
+			document.getElementById('quote').innerHTML = "Knowledge is always progressing. Don't let your ego fool you. You are always knowledge's inferior. - Robert Greene";
+		};
+		function funcThree()
+		{
+			document.getElementById('quote').innerHTML = "what we choose to focus on and what we choose to ignore—plays in defining the quality of our life. - Cal Newport";
+		};
+		function funcFour()
+		{
+			document.getElementById('quote').innerHTML = "The difference between technology and slavery is that slaves are fully aware that they are not free - Nassim Nicholas Taleb";
+		};
+		function funcFive()
+		{
+			document.getElementById('quote').innerHTML = "Whatever the present moment contains, accept it as if you had chosen it. - Eckhart Tolle";
+		};
+		function funcSix()
+		{
+			document.getElementById('quote').innerHTML = "he ability to do what you want, when you want, for as long as you want, has an infinite ROI. - Morgan Housel";
+		};
+		function funcSeven()
+		{
+			document.getElementById('quote').innerHTML = "Every action you take is a vote for the type of person you wish to become. - James Clear";
+		};
+		function funcEight()
+		{
+			document.getElementById('quote').innerHTML = "When you fall in love with the process rather than the product, you don’t have to wait to give yourself permission to be happy. - James Clear";
+		};
+		function funcNine()
+		{
+			document.getElementById('quote').innerHTML = "Failure shows us the way—by showing us what isn’t the way. - Ryan Holiday";
+		};
+		function funcTen()
+		{
+			document.getElementById('quote').innerHTML = "The three big decisions - what you do, where you live, and who you're with. - Naval Ravikant";
+		};
+	</script>
+</body>
+</html>

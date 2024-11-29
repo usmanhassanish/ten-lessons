@@ -13,6 +13,37 @@
 			font-family: trebuchet ms;
 			background-color: black;
 		}
+		.top
+		{
+			color: white;
+			background-color: black;
+			border-bottom:2px dashed white;
+			text-align: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 40px;
+		}
+		.links
+		{
+			width: 80%;
+			margin-left: 10%;
+			color: white;
+			background-color: black;
+			margin-top: 10px;
+			text-align: center;
+			border-radius: 5px;
+			display: none;
+		}
+		h3
+		{
+			border-bottom: 1px solid;
+		}
+		a
+		{
+			color: white;
+			text-decoration: none;
+		}
 		.heading
 		{
 			text-align: center;
@@ -79,6 +110,14 @@
 	</style>
 </head>
 <body>
+	<div class="top">
+		<img onclick="pop()" src="menu.png">
+	</div>
+	<div id="pop" class="links">
+		<a href="index.html"><h3>10 Lessons from 10 books</h3></a>
+		<a href="home.html"><h3>10 Tought Provoking Quotes</h3></a>
+	</div>
+	
 	<div class="heading">
 		<h2>Ten Lessons from Ten Books</h2>
 	</div>
@@ -102,7 +141,7 @@
 		<h2 id="lesson"></h2>
 	</div>
 	<div class="main">
-		<h2 id="head" style="background-color: whitesmoke;">My Book recommendations</h2>
+		<h2 id="head" style="background-color: whitesmoke;font-family: calibri;">My Book Recommendations</h2>
 		<h3 id="list1" class="list">Atomic Habits (James Clear)</h2>
 		<h3 id="list2" class="list">Phsychology of Money (Morgan Housel)</h2>
 		<h3 id="list3" class="list">Discipline is Destiny (Ryan Holiday)</h2>
@@ -117,9 +156,22 @@
 
 	</div>
 	<script type="text/javascript">
+
+		const element = document.getElementById('pop');
+		function pop()
+		{
+			if (element.style.display === "none") {
+                element.style.display = "block";
+                
+            } else {
+                element.style.display = "none";
+            }
+		};
+	</script>
+	<script type="text/javascript">
 		const books = ["Atomic Habits (James Clear)","Eat that Frog (Brian Tracy)","Psychology of Money (Morgan Housel)","Ikigai (Fransesc Miralles & Hector Garcia)","Same as Ever (Morgan Housel)", "Outliers (Malcom Gladwell)", "Start with Why (Simon Sinek)", "Almanak of Naval Ravikant (Eric Jorgenson)", "The Power of Now (Eckhart Tolle)", "80/20 Principle (Richard Koch)"];
 
-		const lesson = ["Small changes in your daily routines will eventually lead to massive results","Do your most important task as your first task of the day","Generating wealth is about managing your emotions","The most fulfilling work is the one that interests you and serves other people","People should focus on things that never change throughout history", "People fail to see the role luck plays in success. The time and environment a person is born plays an important role in their future", "Understanding why you are doing something provides clarity about how to do it", "Media is the biggest leverage", "Mindfulness is the key to happiness worrying about the past or the future makes you unhappy", "80 percent of the results you get are derived from 20 percent of the things you do"];
+		const lesson = ["Small changes in your daily routines will eventually lead to massive results","Do your most important task as your first task of the day","Generating wealth is about managing your emotions","The most fulfilling work is the one that interests you and serves other people","People should focus on things that never change throughout history", "People fail to see the role luck plays in success. The time and environment a person is born plays an important role in their future", "Understanding why you are doing something provides clarity about how to do it", "Wealth is a learnable skill", "Mindfulness is the key to happiness worrying about the past or the future makes you unhappy", "80 percent of the results you get are derived from 20 percent of the things you do"];
 
 		function lesson1()
 		{
