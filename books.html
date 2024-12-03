@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*
+		{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;	
+		}
+		.top
+		{
+			color: white;
+			background-color: black;
+			border-bottom:2px dashed white;
+			text-align: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 40px;
+		}
+		.links
+		{
+			width: 80%;
+			margin-left: 10%;
+			color: white;
+			background-color: black;
+			margin-top: 10px;
+			text-align: center;
+			border-radius: 5px;
+			display: none;
+		}
+		
+		a
+		{
+			color: white;
+			text-decoration: none;
+		}
+		#colors
+		{
+			width: 40%;
+			margin-left: 30%;
+			overflow: auto;
+			margin-top: 10px;
+		}
+		.color
+		{
+			background-color: white;
+			border: 2px solid black;
+			border-radius: 5px;
+			width: 19%;
+			float: left;
+			height: 20px;
+			margin-left: 0.5%;
+			margin-right: 0.5%;
+			margin-bottom: 0.5%;
+		}
+		body
+		{
+			background-color: black;
+		}
+		.quote
+		{
+			width: 60%;
+			margin-left: 20%;
+			display: flex;
+			align-items: center;
+			text-align: center;
+			color: white;
+			margin-top: 20px;
+			border: 3px double white;
+			border-radius: 5px;
+			font-family: georgia;
+		}
+		#quote
+		{
+			text-align: center;
+		}
+		h2
+		{
+			text-align: center;
+		}
+		
+		#book
+		{
+			margin-top: 10px;
+			color: white;
+			font-family: garamond;
+
+		}
+		.book
+		{
+			width: 60%;
+			margin-left: 20%;
+			margin-top: 2px;
+		}
+		h2
+		{
+			text-align: center;
+			font-family: trebuchet ms;
+			color: white;
+		}
+		HR
+		{
+			width: 70%;
+			margin: auto;
+			border: 3px solid white;
+			border-radius: 5px;
+		}
+		h3
+		{
+			text-align: center;
+			color: #F9E795;
+		}
+	</style>
+</head>
+<body>
+	<div class="top">
+		<img onclick="pop()" src="menu.png">
+	</div>
+
+	<div id="pop" class="links">
+		<a href="index.html"><h3>10 Lessons from 10 books</h3></a>
+		<a href="home.html"><h3>10 Tought Provoking Quotes</h3></a>
+		<a href="books.html"><h3>10 Boooks on Productivity</h3></a>
+	</div>
+	<div style="text-align: center;color: white;">
+		<h3 style="font-family: georgia;padding: 10px;border-bottom: 2px solid white; color:white;">TEN BOOKS ON PRODUCTIVITY</h3>
+	</div>
+	<div id="book">
+		<h2>DEEP WORK</h2>
+		<img class="book" src="one.jpeg" height="300px" width="80%">
+		<h2>RECOMMENDED BY</h2>
+		<hR>
+		<h3>Andrew Huberman</h3>
+		<h3>Tim Ferris</h3>
+		<h3>Paul Jarvis</h3>
+	</div>
+	<div id="book">
+		<h2>ATOMIC HABITS</h2>
+		<img class="book" src="two.jpg" height="300px" width="80%">
+		<h2>RECOMMENDED BY</h2>
+		<hR>
+		<h3>Cal Newport</h3>
+		<h3>Ali Abdaal</h3>
+		<h3>Vinod Khosla</h3>
+	</div>
+	<div id="book">
+		<h2>EAT THAT FROG</h2>
+		<img class="book" src="three.jpeg" height="300px" width="80%">
+		<h2>RECOMMENDED BY</h2>
+		<hR>
+		<h3>Brian Tracy</h3>
+		<h3></h3>
+		<h3></h3>
+	</div>
+	<div id="book">
+		<h2>ESSENTIALISM</h2>
+		<img class="book" src="four.jpeg" height="300px" width="80%">
+		<h2>RECOMMENDED BY</h2>
+		<hR>
+		<h3>Steve Harvey</h3>
+		<h3>Ran Segall</h3>
+		<h3>Tim Ferris</h3>
+	</div>
+	<div id="book">
+		<h2>THE COMPOUND EFFECT</h2>
+		<img class="book" src="five.jpeg" height="300px" width="80%">
+		<h2>RECOMMENDED BY</h2>
+		<hR>
+		<h3>James Clear</h3>
+		<h3>Darren Hardy</h3>
+		<h3></h3>
+	</div>
+	<div id="book">
+		<h2>FEEL GOOD PRODUCTIVITY</h2>
+		<img class="book" src="six.jpeg" height="300px" width="80%">
+		<h2>RECOMMENDED BY</h2>
+		<hR>
+		<h3>Ali Abdaal</h3>
+		<h3></h3>
+		<h3></h3>
+	</div>
+	<div id="book">
+		<h2>80/20 PRINCIPLE</h2>
+		<img class="book" src="seven.png" height="300px" width="80%">
+		<h2>RECOMMENDED BY</h2>
+		<hR>
+		<h3>Tim Ferris</h3>
+		<h3>Dave Camarillo</h3>
+		<h3>Ana Fabrega</h3>
+	</div>
+	<div id="book">
+		<h2>PRINCIPLES</h2>
+		<img class="book" src="eight.jpeg" height="300px" width="80%">
+		<h2>RECOMMENDED BY</h2>
+		<hR>
+		<h3>Bill Gates</h3>
+		<h3>Naval Ravikant</h3>
+		<h3>Tim Ferris</h3>
+	</div>
+	<div id="book">
+		<h2>THE SEVEN HABITS OF HIGHLY EFFECTIVE PEOPLE</h2>
+		<img class="book" src="nine.jpeg" height="300px" width="80%">
+		<h2>RECOMMENDED BY</h2>
+		<hR>
+		<h3>Jim Kwik</h3>
+		<h3>Dave Ramsey</h3>
+		<h3>Daniel Pink</h3>
+	</div>
+	<div id="book">
+		<h2>LIMITLESS</h2>
+		<img class="book" src="ten.jpeg" height="300px" width="80%">
+		<h2>RECOMMENDED BY</h2>
+		<hR>
+		<h3>Jim Kwik</h3>
+		
+	</div>
+	<script type="text/javascript">
+
+		const element = document.getElementById('pop');
+		function pop()
+		{
+			if (element.style.display === "none") {
+                element.style.display = "block";
+                
+            } else {
+                element.style.display = "none";
+            }
+		};
+		
+	</script>
+</body>
+</html>
